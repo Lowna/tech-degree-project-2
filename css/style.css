@@ -4,31 +4,44 @@
 /* ===============================================
 Base styling
 =================================================*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
     text-align: center;
     background-color: #fafafa;
+    margin: auto;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.1em;
-    line-height: 1.8;
+    font-size: 1em;
+    line-height: 1.7;
 }
 #wrapper {
-    width: 90%;
-    margin: 0 auto;
     padding: 1em;
 }
 main {
     background-color: #ffffff;
     text-align: center;
-    width: 100%;
-    margin: auto;
-    padding: 2em;
+    height: auto;
+/*    border: 1px solid black;*/
+    
 }
 .banner {
- padding: 1em; 
+ padding: 1em
 }
+
 .name a {
     text-decoration: none;
     color: #4a4a4a;
+}
+a:hover, 
+.name,
+#top,
+.footer-nav {
+     color: #000;
+    transition: all 0.5s ease-out;
 }
 .tagline {
     color: #7f7f7f;
@@ -40,9 +53,7 @@ main {
 }
 /* Top Nav */
 .main-nav {
-/*    width: 100%;*/
     text-transform: uppercase;
-/*    margin-right: 50px;*/
 }
 .main-nav a {
     text-decoration: none;
@@ -57,29 +68,34 @@ main {
   color: #4a4a4a;
   font-weight: bold;
 }
-.main-nav a:hover {
-    color: #000;
-    transition: all 0.5s ease-out;
-}
 /* Portfolio */
-.port-container {
-    color: #4a4a4a;
-    max-width: 100%;
-/*    margin: auto;*/
-}
+
 .port-item {
-    width: 100%;
     display: inline-block;
-   
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+/*    border: 1px solid black;*/
 }
 .port-img {
-    width: 95%;
+    width: 100%;
+    margin: 5px;
+    
+/*    border: 1px solid black;*/
 }
 .port-text {
     color: #4a4a4a;
-    margin-bottom: 1em;
+    font-size: 1em;
+    margin-right: 10px;
+    margin-left: 15px;
+/*    border: 1px solid black;*/
 }
-
+.port-text p {
+    margin-top: 5px;
+}
 /* Contact */
 aside {
     padding: 2em;
@@ -89,7 +105,10 @@ aside {
     list-style: none;
 }
 hr {
+    width: 90%;
+    margin: auto;
     margin-top: 1em;
+    margin-bottom: 30px;
 }
 /* Footer */
 .main-footer {
@@ -107,10 +126,12 @@ hr {
 }
 .foot-btn {
     float: right;
+    margin-top: 5px;
     margin-left: 1em;
 }
  .footer-nav {
         list-style-type: none;
+        margin-top: 5px;
     }
     .footer-nav li {
         float: left;
@@ -148,7 +169,11 @@ hr {
     .tagline {
      float: left;
      width: 43%;
-     margin-top: 20px;
+     margin-top: 15px;
+     margin-left: 30px;
+     font-size: 1em;
+     text-align: left;
+     
     }
     .logo, 
     .tagline {
@@ -156,7 +181,6 @@ hr {
     }
     .port-item {
     float: left;
-    clear: right;
     width: 50%;
     }
     .footer-nav {
@@ -166,24 +190,40 @@ hr {
    
     .foot-btn {
     display: none;
-    }
-    
-    
-    .clearfix::after {
+    }   
+      .clearfix::after {
      content: "";
      display: table;
      clear: both;
 
     }
-    
 }
 
 @media (min-width: 1025px) {
+    main {
+    padding: 2em; 
+     margin-bottom: 15px;
+    }
+    main .port-item:nth-child(2n) {
+    clear: none;
+  }
+
+   main .port-item:nth-child(3n-1) {
+    clear: both;
+  }
     .port-item {
        width: 32%;
+       margin-right: 5px;
+       margin-left: 5px;
     }
+    .port-text {
+        padding-bottom: 20px;
+    }
+ 
+  
 }
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
+      
 }
 /*
 @media (min-width: 1400px) {

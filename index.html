@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name=viewport content="width=device-width, initial-scale=1">
 <title>Responsive Layout</title>
-<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<!--<link rel="stylesheet" type="text/css" href="css/normalize.css">-->
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -27,48 +27,50 @@
             <span class="tagline">Hi! I&#39;m a front&#45;end developer who loves responsive design and css. I recently finished a degree in front&#45;end web development at Treehouse and am excited to put all my skills to use!</span>
         </div><!--/.banner-->
         <main class="clearfix"><!--portfolio-->
+            <div class="clearfix">
             <h1 id="portfolio">Portfolio</h1>
-               <div class="port-item clearfix">		
+               <div class="port-item">		
                     <img src="img/portfolio-1.png" alt="Graphic of Marketinpage" class="port-img">
                     <div class="port-text">
                     <h2>Marketing Page</h2>
-                    <p class="port-text">This project shows the front page of marketing website meant for a specific business I&#39;interested in.</p>
+                    <p>This project shows the front page of marketing website meant for a specific business I&#39;interested in.</p>
                     </div>
                 </div>
-                <div class="port-item clearfix">		
+                <div id="test" class="port-item clearfix">		
                      <img src="img/portfolio-2.png" alt="Graphic of Search Page." class="port-img">
                      <div class="port-text">
                      <h2>Search Page</h2>
                      <p>This project shows searches through a specific database to find information that the user is trying to look up.</p>
                      </div>
                 </div>
-                <div class="port-item clearfix">		
+                <div class="port-item">		
                     <img src="img/portfolio-3.png" alt="Graphic of Travel App" class="port-img">
                     <div class="port-text">
                     <h2>Travel App</h2>
                     <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
                     </div>
                 </div>
-                <div class="port-item clearfix">		
+                <div class="port-item">		
                     <img src="img/portfolio-4.png" alt="Graphic of Favorite Spots." class="port-img">
                     <div class="port-text">
                     <h2>Map of Favorite Spots</h2>
                     <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
                     </div>
                 </div>
-                <div class="port-item clearfix">		
+                <div class="port-item">		
                     <img src="img/portfolio-5.png" alt="Graphic of Photo Gallery" class="port-img">
                     <div class="port-text">
                     <h2>Photo Gallery</h2>
                     <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos</p>
                     </div>
                 </div>
-                <div class="port-item clearfix">		
+                <div class="port-item">		
                     <img src="img/portfolio-6.png" alt="Graphic of Calculator." class="port-img">
                     <div class="port-text">
                     <h2>Calculator</h2>
                     <p>Someone can enter in the numbers they want&#44; and press the big blue button and get the result.</p>
                     </div>
+                </div>
                 </div>
         </main><!--/portfolio-->
         <aside  class="port-text clearfix">
@@ -80,7 +82,6 @@
              </ul>
         </aside>
         <hr>
-        </div>
         <footer>
             <div class="main-footer">
                 <h2 class="name-footer"><a href="#top">Student Name</a></h2>
@@ -92,6 +93,6 @@
                 <p class="foot-btn"><a href="#top">Back to top</a></p>
             </div>
         </footer>
-    
+    </div><!--/#wrapper-->
 </body>
 </html>
