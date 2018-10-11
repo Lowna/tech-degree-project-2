@@ -29,8 +29,6 @@ main {
     text-align: center;
     height: auto;
     padding-top: 15px;
-/*    border: 1px solid black;*/
-    
 }
 .banner {
     padding: 1em;
@@ -83,20 +81,16 @@ a:hover {
     padding: 25px 25px 30px 15px;
     margin-top: 20px;
     margin-bottom: 20px;
-/*    border: 1px solid black;*/
 }
 .port-img {
     width: 100%;
     margin: 5px;
-    
-/*    border: 1px solid black;*/
 }
 .port-text {
     color: #4a4a4a;
     font-size: 1em;
     margin-right: 10px;
     margin-left: 15px;
-/*    border: 1px solid black;*/
 }
 .port-text p {
     margin-top: 5px;
