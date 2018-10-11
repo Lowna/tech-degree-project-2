@@ -32,6 +32,7 @@ main {
 }
 .banner {
     padding: 1em;
+    margin-bottom: 25px;
 }
 .name,
 .name-footer {
@@ -94,6 +95,24 @@ a:hover {
 }
 .port-text p {
     margin-top: 5px;
+}
+/* Skills */
+.skill-list {
+    background: #868686;
+    padding: 5em;
+    margin-top: 25px;
+}
+.skill-item {
+    background: #929292;
+    display: block;
+    font-size: 3em;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#shead {
+    font-size: 2em;
+    color: #000;
+    border-bottom: 1px solid #000;
 }
 /* Contact */
 aside {
@@ -189,6 +208,11 @@ hr.style-two {
      float: left;
      width: 50%;
     }
+    .skill-item {
+     display: inline-block;
+     padding: 0.5em;
+     margin-left: 15px;
+    }
     .footer-nav {
      display: inline-block;
      float: right;
@@ -225,6 +249,10 @@ hr.style-two {
    }
    .port-text {
     padding-bottom: 20px;
+   }
+   .skill-item {
+    padding: 0.75em;
+    margin-left: 25px;
    }
 }
 
