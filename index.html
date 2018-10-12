@@ -26,7 +26,7 @@
         </header><!--/.main-header-->   
         <div class="banner clearfix"><!--/.banner-->
             <img class="logo" src="img/responsive-layout-profile.png" alt="Graphic of Tech Degree grad!">
-            <span class="tagline">Hi&#33; I&#39;m a front&#45;end developer who loves responsive design and css&#46; I recently finished a degree in front&#45;end web development at Treehouse and am excited to put all my skills to use&#33;</span>
+            <span id="typing" class="tagline">Hi&#33; I&#39;m a front&#45;end developer who loves responsive design and css&#46; I recently finished a degree in front&#45;end web development at Treehouse and am excited to put all my skills to use&#33;</span>
         </div><!--/.banner-->
         <main class="clearfix"><!--portfolio-->
             <div class="clearfix">
@@ -107,5 +107,34 @@
             </div>
         </footer>
     </div><!--/#wrapper-->
+    <script type="text/javascript">
+        var pos= 0;
+        var speed = 50;
+        var typing = document.getElementById('typing').innerText;
+        
+        document.getElementById('typing').innerText = '';
+        
+        function type() {
+            if(pos < typing.length) {
+                document.getElementById('typing').innerHTML += typing.charAt(pos);
+                pos++;
+                setTimeout(type,speed);
+            } else {
+                setTimeout(erase,speed);
+            }
+        }
+        setTimeout(type,speed);
+        
+        function erase() {
+            if(pos>=0) {
+                var temp = typing.substring(0, pos);
+                document.getElementById('typing').innerText = temp;
+                pos--;
+                setTimeout(erase, speed);
+            } else {
+                setTimeout(type,speed);
+            }
+        }
+    </script>
 </body>
 </html>
