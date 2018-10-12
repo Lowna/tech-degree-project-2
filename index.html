@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div id="wrapper" class="clearfix">
+    <div id="wrapper" class="clearfix"><!--#wrapper -->
         <header class="main-header"><!--.main-header-->  
             <div class="container clearfix">
                 <h1 class="name" id="top"><a href="#top">Student Name</a></h1>
@@ -107,13 +107,17 @@
             </div>
         </footer>
     </div><!--/#wrapper-->
+    <!--js--> 
     <script>
-        var pos= 0;
-        var speed = 50;
-        var typing = document.getElementById('typing').innerText;
+        /*
+        This javascript was added for additional practice with developing a web page as well as to begin to get my coding feet wet with dom manipulation.
+        */
+        var pos= 0;//starting position
+        var speed = 50;//soeed of typing
+        var typing = document.getElementById('typing').innerText;//get type string by id
         
         document.getElementById('typing').innerText = '';
-        
+        /* function for typing js */
         function type() {
             if(pos < typing.length) {
                 document.getElementById('typing').innerHTML += typing.charAt(pos);
@@ -124,7 +128,7 @@
             }
         }
         setTimeout(type,speed);
-        
+        /* function for erasing and repeating typing js */
         function erase() {
             if(pos>=0) {
                 var temp = typing.substring(0, pos);
@@ -136,5 +140,6 @@
             }
         }
     </script>
+    <!--/js-->
 </body>
 </html>
