@@ -107,39 +107,5 @@
             </div>
         </footer>
     </div><!--/#wrapper-->
-    <!--js--> 
-    <script>
-        /*
-        This javascript was added for additional practice with developing a web page as well as to begin to get my coding feet wet with dom manipulation.
-        */
-        var pos= 0;//starting position
-        var speed = 50;//soeed of typing
-        var typing = document.getElementById('typing').innerText;//get type string by id
-        
-        document.getElementById('typing').innerText = '';
-        /* function for typing js */
-        function type() {
-            if(pos < typing.length) {
-                document.getElementById('typing').innerHTML += typing.charAt(pos);
-                pos++;
-                setTimeout(type,speed);
-            } else {
-                setTimeout(erase,speed);
-            }
-        }
-        setTimeout(type,speed);
-        /* function for erasing and repeating typing js */
-        function erase() {
-            if(pos>=0) {
-                var temp = typing.substring(0, pos);
-                document.getElementById('typing').innerText = temp;
-                pos--;
-                setTimeout(erase, speed);
-            } else {
-                setTimeout(type,speed);
-            }
-        }
-    </script>
-    <!--/js-->
 </body>
 </html>
