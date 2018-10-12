@@ -56,6 +56,7 @@ main {
 .main-nav a {
     text-transform: uppercase;
     text-decoration: none;
+    color: #4a4a4a;
 }
 .main-nav ul li {
     list-style: none;
