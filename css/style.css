@@ -198,7 +198,7 @@ a:hover {
 /* ===============================================
  Media Queries 
 =================================================*/
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .main-nav {
     float: right;
     }
@@ -249,7 +249,7 @@ a:hover {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     main {
     padding: 2em;
     padding-top: 15px;
